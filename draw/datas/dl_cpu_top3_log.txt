@@ -1,0 +1,315 @@
+D:\Projects\pFind\pFind-kernel\trunk_new\install>Searcher.exe D:\pFindWorkspace\Astral\new\top50-complete\param\pFind_usepPred_pf.cfg
+[pFind]  #########################################
+[pFind]  #                                       #
+[pFind]  #  Welcome to use pFind search engine!  #
+[pFind]  #                                       #
+[pFind]  #                  version 3.2.0        #
+[pFind]  #                                       #
+[pFind]  #               http://pfind.org        #
+[pFind]  #                                       #
+[pFind]  #########################################
+[pFind] Fasta path: D:\data\fasta\human_arabidopsis_con.fasta
+[pFind] MSMS path: D:\data\ms\Astral\PXD046357-Single_Cell\top50\20230108_AST_Neo1_DDA_UHG_HeLa_200ng_2th2p5ms_top50_01_20230808155512_HCDAST.pf2
+[pFind] MSMS path: D:\data\ms\Astral\PXD046357-Single_Cell\top50\20230108_AST_Neo1_DDA_UHG_HeLa_200ng_2th2p5ms_top50_02_20230808161140_HCDAST.pf2
+[pFind] MSMS path: D:\data\ms\Astral\PXD046357-Single_Cell\top50\20230108_AST_Neo1_DDA_UHG_HeLa_200ng_2th2p5ms_top50_03_20230808162807_HCDAST.pf2
+Loading...
+D:\pFindWorkspace\Astral\new\top50-complete\result\top50-complete.F1.L1.sa
+D:\pFindWorkspace\Astral\new\top50-complete\result\top50-complete.F2.L1.sa
+D:\pFindWorkspace\Astral\new\top50-complete\result\top50-complete.F3.L1.sa
+time: 19716time: 451202850
+1151393
+Selecting...
+Acetyl[ProteinN-term] 502
+Carbamidomethyl[C] 3229
+Oxidation[M] 246
+training number: 21008
+Generating train data...
+Complete!
+Finetuning RT Model...
+pPred.exe -rt --tune -m pPredRT_main.pt -n finetuned -om D:\pFindWorkspace\Astral\new\top50-complete\result\ -d D:\pFindWorkspace\Astral\new\top50-complete\result\train.rtdata -i 0.046758_13.953349 -l D:\pFindWorkspace\Astral\new\top50-complete\result\finetune_log.txt -bs 1024
+[pPred] (4:29) Epoch: 0, Training Loss: 0.006821
+[pPred] (4:36) delta_RT(95%, 99%): 0.074070 0.210002
+[pPred] (4:36) Epoch: 0, Validation Loss: 0.002693
+[pPred] (9:9) Epoch: 1, Training Loss: 0.001882
+[pPred] (9:16) delta_RT(95%, 99%): 0.051915 0.140200
+[pPred] (9:16) Epoch: 1, Validation Loss: 0.001398
+[pPred] (13:45) Epoch: 2, Training Loss: 0.001086
+[pPred] (13:51) delta_RT(95%, 99%): 0.041125 0.133736
+[pPred] (13:51) Epoch: 2, Validation Loss: 0.001095
+[pPred] (18:22) Epoch: 3, Training Loss: 0.000833
+[pPred] (18:29) delta_RT(95%, 99%): 0.035999 0.129500
+[pPred] (18:29) Epoch: 3, Validation Loss: 0.000982
+[pPred] (22:58) Epoch: 4, Training Loss: 0.000718
+[pPred] (23:5) delta_RT(95%, 99%): 0.033948 0.130066
+[pPred] (23:5) Epoch: 4, Validation Loss: 0.000889
+[pPred] (27:35) Epoch: 5, Training Loss: 0.000625
+[pPred] (27:42) delta_RT(95%, 99%): 0.033358 0.122505
+[pPred] (27:42) Epoch: 5, Validation Loss: 0.000874
+[pPred] (32:13) Epoch: 6, Training Loss: 0.000560
+[pPred] (32:20) delta_RT(95%, 99%): 0.033521 0.124157
+[pPred] (32:20) Epoch: 6, Validation Loss: 0.000887
+[pPred] (36:51) Epoch: 6, Training Loss: 0.000555
+[pPred] (36:58) delta_RT(95%, 99%): 0.034292 0.110998
+[pPred] (36:58) Epoch: 6, Validation Loss: 0.000885
+[pPred] (41:28) Epoch: 6, Training Loss: 0.000552
+[pPred] (41:35) delta_RT(95%, 99%): 0.033908 0.117729
+[pPred] (41:35) Epoch: 6, Validation Loss: 0.000887
+[pPred] (46:7) Epoch: 6, Training Loss: 0.000554
+[pPred] (46:13) delta_RT(95%, 99%): 0.033856 0.116292
+[pPred] (46:13) Epoch: 6, Validation Loss: 0.000856
+[pPred] (50:45) Epoch: 7, Training Loss: 0.000483
+[pPred] (50:51) delta_RT(95%, 99%): 0.034059 0.125562
+[pPred] (50:51) Epoch: 7, Validation Loss: 0.000875
+[pPred] (55:21) Epoch: 7, Training Loss: 0.000487
+[pPred] (55:28) delta_RT(95%, 99%): 0.033057 0.110290
+[pPred] (55:28) Epoch: 7, Validation Loss: 0.000911
+[pPred] (60:1) Epoch: 7, Training Loss: 0.000489
+[pPred] (60:8) delta_RT(95%, 99%): 0.033242 0.133304
+[pPred] (60:8) Epoch: 7, Validation Loss: 0.000924
+[pPred] (64:42) Epoch: 7, Training Loss: 0.000484
+[pPred] (64:49) delta_RT(95%, 99%): 0.033166 0.125898
+[pPred] (64:49) Epoch: 7, Validation Loss: 0.000934
+[pPred] (69:23) Epoch: 8, Training Loss: 0.000428
+[pPred] (69:30) delta_RT(95%, 99%): 0.032161 0.113309
+[pPred] (69:30) Epoch: 8, Validation Loss: 0.000868
+[pPred] (74:0) Epoch: 9, Training Loss: 0.000375
+[pPred] (74:6) delta_RT(95%, 99%): 0.031877 0.120650
+[pPred] (74:6) Epoch: 9, Validation Loss: 0.000902
+[pPred] (78:38) Epoch: 9, Training Loss: 0.000375
+[pPred] (78:45) delta_RT(95%, 99%): 0.032570 0.124363
+[pPred] (78:45) Epoch: 9, Validation Loss: 0.000872
+[pPred] (83:14) Epoch: 9, Training Loss: 0.000374
+[pPred] (83:21) delta_RT(95%, 99%): 0.032155 0.143309
+[pPred] (83:21) Epoch: 9, Validation Loss: 0.000894
+[pPred] (87:51) Epoch: 9, Training Loss: 0.000377
+[pPred] (87:58) delta_RT(95%, 99%): 0.032676 0.135528
+[pPred] (87:58) Epoch: 9, Validation Loss: 0.000917
+[pPred] (87:58) Early stopping on epoch 9
+[pPred] (87:58) best RT model (epoch:6) saved: D:\pFindWorkspace\Astral\new\top50-complete\result\\finetuned_rt.pt
+Complete!
+Finetuning MS2 Model...
+pPred.exe -ms2 --tune -m pPredMs2_main.pt -n finetuned -om D:\pFindWorkspace\Astral\new\top50-complete\result\ -d D:\pFindWorkspace\Astral\new\top50-complete\result\train.ms2data -i 1_28_28_28 -l D:\pFindWorkspace\Astral\new\top50-complete\result\finetune_log.txt -bs 1024
+[pPred] (0:0) reading data: D:\pFindWorkspace\Astral\new\top50-complete\result\train.ms2data
+[pPred] (0:0) data size: 18907, 2101
+[pPred] (4:37) Epoch: 0, Training Loss: 0.000433
+[pPred] (4:44) pearsons(match): 0.091734 0.384573 0.873349
+[pPred] (4:44) pearsons(all): 0.519696 0.724726 0.946544
+[pPred] (4:44) Epoch: 0, Validation Loss: 0.00034561
+[pPred] (9:19) Epoch: 1, Training Loss: 0.000353
+[pPred] (9:26) pearsons(match): 0.154862 0.458668 0.888712
+[pPred] (9:26) pearsons(all): 0.546779 0.751262 0.950621
+[pPred] (9:26) Epoch: 1, Validation Loss: 0.00031886
+[pPred] (14:2) Epoch: 2, Training Loss: 0.000333
+[pPred] (14:9) pearsons(match): 0.162992 0.470552 0.891777
+[pPred] (14:9) pearsons(all): 0.526147 0.751435 0.952686
+[pPred] (14:9) Epoch: 2, Validation Loss: 0.00031167
+[pPred] (18:45) Epoch: 3, Training Loss: 0.000324
+[pPred] (18:52) pearsons(match): 0.200752 0.475926 0.892089
+[pPred] (18:52) pearsons(all): 0.525347 0.756117 0.952738
+[pPred] (18:52) Epoch: 3, Validation Loss: 0.00030903
+[pPred] (23:29) Epoch: 4, Training Loss: 0.000316
+[pPred] (23:36) pearsons(match): 0.190888 0.487459 0.895774
+[pPred] (23:36) pearsons(all): 0.517656 0.753464 0.953063
+[pPred] (23:36) Epoch: 4, Validation Loss: 0.00030749
+[pPred] (28:12) Epoch: 5, Training Loss: 0.000311
+[pPred] (28:19) pearsons(match): 0.193932 0.489944 0.893686
+[pPred] (28:19) pearsons(all): 0.518539 0.755411 0.953140
+[pPred] (28:19) Epoch: 5, Validation Loss: 0.00030656
+[pPred] (32:55) Epoch: 6, Training Loss: 0.000306
+[pPred] (33:2) pearsons(match): 0.195126 0.488938 0.893787
+[pPred] (33:2) pearsons(all): 0.514604 0.754990 0.953651
+[pPred] (33:2) Epoch: 6, Validation Loss: 0.00030609
+[pPred] (37:40) Epoch: 7, Training Loss: 0.000302
+[pPred] (37:47) pearsons(match): 0.181081 0.491879 0.894899
+[pPred] (37:47) pearsons(all): 0.511665 0.756197 0.953600
+[pPred] (37:47) Epoch: 7, Validation Loss: 0.00030656
+[pPred] (42:27) Epoch: 7, Training Loss: 0.000301
+[pPred] (42:34) pearsons(match): 0.189981 0.487720 0.895642
+[pPred] (42:34) pearsons(all): 0.507855 0.757044 0.953948
+[pPred] (42:34) Epoch: 7, Validation Loss: 0.00030629
+[pPred] (47:10) Epoch: 7, Training Loss: 0.000302
+[pPred] (47:17) pearsons(match): 0.193728 0.486379 0.895533
+[pPred] (47:17) pearsons(all): 0.512745 0.757757 0.953368
+[pPred] (47:17) Epoch: 7, Validation Loss: 0.00030674
+[pPred] (51:56) Epoch: 7, Training Loss: 0.000301
+[pPred] (52:3) pearsons(match): 0.178148 0.487085 0.895000
+[pPred] (52:3) pearsons(all): 0.522812 0.756275 0.953423
+[pPred] (52:3) Epoch: 7, Validation Loss: 0.00030666
+[pPred] (56:40) Epoch: 8, Training Loss: 0.000298
+[pPred] (56:47) pearsons(match): 0.185314 0.489865 0.895662
+[pPred] (56:47) pearsons(all): 0.512786 0.752613 0.953559
+[pPred] (56:47) Epoch: 8, Validation Loss: 0.00030685
+[pPred] (61:23) Epoch: 8, Training Loss: 0.000297
+[pPred] (61:30) pearsons(match): 0.190137 0.494032 0.896377
+[pPred] (61:30) pearsons(all): 0.521643 0.754933 0.953184
+[pPred] (61:30) Epoch: 8, Validation Loss: 0.00030653
+[pPred] (66:5) Epoch: 9, Training Loss: 0.000294
+[pPred] (66:12) pearsons(match): 0.179025 0.494057 0.893267
+[pPred] (66:12) pearsons(all): 0.510717 0.757870 0.953278
+[pPred] (66:12) Epoch: 9, Validation Loss: 0.00030758
+[pPred] (70:49) Epoch: 9, Training Loss: 0.000294
+[pPred] (70:56) pearsons(match): 0.183722 0.494589 0.894255
+[pPred] (70:56) pearsons(all): 0.516673 0.758657 0.953547
+[pPred] (70:56) Epoch: 9, Validation Loss: 0.00030682
+[pPred] (75:33) Epoch: 9, Training Loss: 0.000294
+[pPred] (75:40) pearsons(match): 0.187543 0.493626 0.894445
+[pPred] (75:40) pearsons(all): 0.515530 0.754235 0.953554
+[pPred] (75:40) Epoch: 9, Validation Loss: 0.00030680
+[pPred] (80:15) Epoch: 9, Training Loss: 0.000294
+[pPred] (80:21) pearsons(match): 0.187465 0.495809 0.895618
+[pPred] (80:21) pearsons(all): 0.513494 0.758151 0.953493
+[pPred] (80:21) Epoch: 9, Validation Loss: 0.00030663
+[pPred] (80:22) Early stopping on epoch 9
+[pPred] (80:22) best MS2 model (epoch:6) saved: D:\pFindWorkspace\Astral\new\top50-complete\result\\finetuned_ms2.pt
+Complete!
+finetune time: 10138921
+ReRanker.exe "D:\pFindWorkspace\Astral\new\top50-complete\param\pFind_usepPred_pf.cfg.F1.L1" 4 0 1
+time: 37285time: 145[pFind] <Protein Infer> Inferring proteins...
+[pFind] <Protein Infer> Inferring proteins completed.
+57316
+Predicting RT...
+pPred.exe -rt --pred -m D:\pFindWorkspace\Astral\new\top50-complete\result\finetuned_rt.pt -d D:\pFindWorkspace\Astral\new\top50-complete\result\pred.pepdata -op D:\pFindWorkspace\Astral\new\top50-complete\result\pred.pepdata.rt.pred -i 0.046758_13.953300 -l D:\pFindWorkspace\Astral\new\top50-complete\result\predict_log.txt -bs 1024 -bo
+[pPred] (0:1) 1109606 items loaded.
+[pPred] (48:6) predicting RT... 100.0%
+Complete!
+rt prediction time: 2887210
+Predicting MS2...
+pPred.exe -ms2 --pred -m D:\pFindWorkspace\Astral\new\top50-complete\result\finetuned_ms2.pt -d D:\pFindWorkspace\Astral\new\top50-complete\result\pred.pepdata -op D:\pFindWorkspace\Astral\new\top50-complete\result\pred.pepdata.ms2.pred -i 1_28_28_28_2_6 -l D:\pFindWorkspace\Astral\new\top50-complete\result\predict_log.txt -bs 1024 -bo
+[pPred] (0:1) data size: 1109606, 1109606
+[pPred] (49:26) Predicting MS2 100%         09606
+ms2 prediction time: 2966878
+Complete!
+Assigning...
+experiment data reading time: 50438
+read rt
+rt feature construction time: 63
+read ms2
+ms2 prediction time: 569
+Complete!
+pPred time: 5906296
+pos:57195 neg:198368
+115792] <Rerank>: 10%
+pos:115646 neg:197767
+132112] <Rerank>: 20%
+pos:131959 neg:197414
+140453] <Rerank>: 30%
+pos:140296 neg:197037
+144614] <Rerank>: 40%
+pos:144436 neg:196323
+147242] <Rerank>: 50%
+pos:147053 neg:195950
+148689] <Rerank>: 60%
+pos:148513 neg:195590
+149591] <Rerank>: 70%
+pos:149401 neg:195170
+150514] <Rerank>: 80%
+pos:150314 neg:194905
+151251] <Rerank>: 90%
+pos:151044 neg:194719
+end: 151959rank>: 100%
+[pFind] <Rerank>: 100%
+ReRanker.exe "D:\pFindWorkspace\Astral\new\top50-complete\param\pFind_usepPred_pf.cfg.F2.L1" 4 0 1
+time: 35174time: 138[pFind] <Protein Infer> Inferring proteins...
+[pFind] <Protein Infer> Inferring proteins completed.
+55695
+Predicting RT...
+pPred.exe -rt --pred -m D:\pFindWorkspace\Astral\new\top50-complete\result\finetuned_rt.pt -d D:\pFindWorkspace\Astral\new\top50-complete\result\pred.pepdata -op D:\pFindWorkspace\Astral\new\top50-complete\result\pred.pepdata.rt.pred -i 0.046758_13.953300 -l D:\pFindWorkspace\Astral\new\top50-complete\result\predict_log.txt -bs 1024 -bo
+[pPred] (0:1) 1112381 items loaded.
+[pPred] (47:43) predicting RT... 100.0%
+Complete!
+rt prediction time: 2864034
+Predicting MS2...
+pPred.exe -ms2 --pred -m D:\pFindWorkspace\Astral\new\top50-complete\result\finetuned_ms2.pt -d D:\pFindWorkspace\Astral\new\top50-complete\result\pred.pepdata -op D:\pFindWorkspace\Astral\new\top50-complete\result\pred.pepdata.ms2.pred -i 1_28_28_28_2_6 -l D:\pFindWorkspace\Astral\new\top50-complete\result\predict_log.txt -bs 1024 -bo
+[pPred] (0:1) data size: 1112381, 1112381
+[pPred] (49:22) Predicting MS2 100%         2381
+ms2 prediction time: 2962686
+Complete!
+Assigning...
+experiment data reading time: 49015
+read rt
+rt feature construction time: 61
+read ms2
+ms2 prediction time: 559
+Complete!
+pPred time: 5877433
+pos:55584 neg:199009
+114544] <Rerank>: 10%
+pos:114407 neg:198287
+131783] <Rerank>: 20%
+pos:131629 neg:197916
+139474] <Rerank>: 30%
+pos:139257 neg:197469
+143225] <Rerank>: 40%
+pos:143036 neg:196752
+145653] <Rerank>: 50%
+pos:145470 neg:196386
+147171] <Rerank>: 60%
+pos:146979 neg:196131
+147989] <Rerank>: 70%
+pos:147761 neg:195824
+148245] <Rerank>: 80%
+pos:148049 neg:195677
+148243] <Rerank>: 90%
+pos:148033 neg:195402
+end: 148032rank>: 100%
+[pFind] <Rerank>: 100%
+ReRanker.exe "D:\pFindWorkspace\Astral\new\top50-complete\param\pFind_usepPred_pf.cfg.F3.L1" 4 0 1
+time: 35201time: 159[pFind] <Protein Infer> Inferring proteins...
+[pFind] <Protein Infer> Inferring proteins completed.
+54367
+Predicting RT...
+pPred.exe -rt --pred -m D:\pFindWorkspace\Astral\new\top50-complete\result\finetuned_rt.pt -d D:\pFindWorkspace\Astral\new\top50-complete\result\pred.pepdata -op D:\pFindWorkspace\Astral\new\top50-complete\result\pred.pepdata.rt.pred -i 0.046758_13.953300 -l D:\pFindWorkspace\Astral\new\top50-complete\result\predict_log.txt -bs 1024 -bo
+[pPred] (0:1) 1111320 items loaded.
+[pPred] (47:19) predicting RT... 100.0%
+Complete!
+rt prediction time: 2839311
+Predicting MS2...
+pPred.exe -ms2 --pred -m D:\pFindWorkspace\Astral\new\top50-complete\result\finetuned_ms2.pt -d D:\pFindWorkspace\Astral\new\top50-complete\result\pred.pepdata -op D:\pFindWorkspace\Astral\new\top50-complete\result\pred.pepdata.ms2.pred -i 1_28_28_28_2_6 -l D:\pFindWorkspace\Astral\new\top50-complete\result\predict_log.txt -bs 1024 -bo
+[pPred] (0:1) data size: 1111320, 1111320
+[pPred] (49:8) Predicting MS2 100%         111320
+ms2 prediction time: 2949318
+Complete!
+Assigning...
+experiment data reading time: 48752
+read rt
+rt feature construction time: 63
+read ms2
+ms2 prediction time: 568
+Complete!
+pPred time: 5839086
+pos:54266 neg:198967
+115086] <Rerank>: 10%
+pos:114965 neg:198135
+132376] <Rerank>: 20%
+pos:132237 neg:197697
+139755] <Rerank>: 30%
+pos:139623 neg:197287
+143985] <Rerank>: 40%
+pos:143801 neg:196827
+146013] <Rerank>: 50%
+pos:145827 neg:196437
+147022] <Rerank>: 60%
+pos:146838 neg:196113
+147517] <Rerank>: 70%
+pos:147324 neg:195797
+147906] <Rerank>: 80%
+pos:147722 neg:195620
+148584] <Rerank>: 90%
+pos:148401 neg:195386
+end: 148822rank>: 100%
+[pFind] <Rerank>: 100%
+rescore time: 18162467
+[pFind] == == == Total Time elapsed of Identification: 28301.5 seconds. == == ==
+[pFind] <Filter By FDR> Initialize...
+D:\pFindWorkspace\Astral\new\top50-complete\result\top50-complete.F1.L1.qry.res
+D:\pFindWorkspace\Astral\new\top50-complete\result\top50-complete.F2.L1.qry.res
+D:\pFindWorkspace\Astral\new\top50-complete\result\top50-complete.F3.L1.qry.res
+time: 17447time: 51[pFind] <Filter By FDR> TDA started...
+[pFind] <Filter By FDR> TDA completed.
+[pFind] <Scoring Proteins>: 100%
+ID Rate of 20230108_AST_Neo1_DDA_UHG_HeLa_200ng_2th2p5ms_top50_01_20230808155512: 76377 / 88307 = 86.4903%
+ID Rate of 20230108_AST_Neo1_DDA_UHG_HeLa_200ng_2th2p5ms_top50_02_20230808161140: 75623 / 88184 = 85.7559%
+ID Rate of 20230108_AST_Neo1_DDA_UHG_HeLa_200ng_2th2p5ms_top50_03_20230808162807: 75771 / 88134 = 85.9725%
+Overall ID Rate: 227771 / 264625 = 86.0731%
+[pFind] == == == Total Time elapsed of Filter: 68.8 seconds. == == ==
+***********Total Time: 28372.40***********
