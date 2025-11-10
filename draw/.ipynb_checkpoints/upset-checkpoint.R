@@ -18,40 +18,22 @@ expression_data <- c(
   # "MSFragger" = 4105,  # 仅MSFragger为True
   # "MaxQuant" = 2421,  # 仅MaxQuant为True
   # "Comet" = 1596  # 仅Comet为True
-    
-  # # Gygi
-  # "pFind-new&MSFragger&MaxQuant&Comet" = 116442,  # 所有集合均为True
-  # "pFind-new&MSFragger&MaxQuant" = 5237,  # pFind-new、MSFragger、MaxQuant为True
-  # "pFind-new&MSFragger&Comet" = 10899,  # pFind-new、MSFragger、Comet为True
-  # "pFind-new&MaxQuant&Comet" = 1430,  # pFind-new、MaxQuant、Comet为True
-  # "MSFragger&MaxQuant&Comet" = 903,  # MSFragger、MaxQuant、Comet为True
-  # "pFind-new&MSFragger" = 6094,  # pFind-new、MSFragger为True
-  # "pFind-new&MaxQuant" = 4786,  # pFind-new、MaxQuant为True
-  # "pFind-new&Comet" = 1346,  # pFind-new、Comet为True
-  # "MSFragger&MaxQuant" = 1633,  # MSFragger、MaxQuant为True
-  # "MSFragger&Comet" = 691,  # MSFragger、Comet为True
-  # "MaxQuant&Comet" = 550,  # MaxQuant、Comet为True
-  # "pFind-new" = 29267,  # 仅pFind-new为True
-  # "MSFragger" = 2986,  # 仅MSFragger为True
-  # "MaxQuant" = 2470,  # 仅MaxQuant为True
-  # "Comet" = 1614  # 仅Comet为True
 
-  # HLA
-  "pFind-new&MSFragger&MaxQuant&Comet" = 6691,  # 所有集合均为True
-  "pFind-new&MSFragger&MaxQuant" = 528,  # pFind-new、MSFragger、MaxQuant为True
-  "pFind-new&MSFragger&Comet" = 5204,  # pFind-new、MSFragger、Comet为True
-  "pFind-new&MaxQuant&Comet" = 101,  # pFind-new、MaxQuant、Comet为True
-  "MSFragger&MaxQuant&Comet" = 178,  # MSFragger、MaxQuant、Comet为True
-  "pFind-new&MSFragger" = 2809,  # pFind-new、MSFragger为True
-  "pFind-new&MaxQuant" = 150,  # pFind-new、MaxQuant为True
-  "pFind-new&Comet" = 540,  # pFind-new、Comet为True
-  "MSFragger&MaxQuant" = 85,  # MSFragger、MaxQuant为True
-  "MSFragger&Comet" = 461,  # MSFragger、Comet为True
-  "MaxQuant&Comet" = 32,  # MaxQuant、Comet为True
-  "pFind-new" = 2971,  # 仅pFind-new为True
-  "MSFragger" = 1244,  # 仅MSFragger为True
-  "MaxQuant" = 275,  # 仅MaxQuant为True
-  "Comet" = 481  # 仅Comet为True
+  "pFind-new&MSFragger&MaxQuant&Comet" = 116442,  # 所有集合均为True
+  "pFind-new&MSFragger&MaxQuant" = 5237,  # pFind-new、MSFragger、MaxQuant为True
+  "pFind-new&MSFragger&Comet" = 10899,  # pFind-new、MSFragger、Comet为True
+  "pFind-new&MaxQuant&Comet" = 1430,  # pFind-new、MaxQuant、Comet为True
+  "MSFragger&MaxQuant&Comet" = 903,  # MSFragger、MaxQuant、Comet为True
+  "pFind-new&MSFragger" = 6094,  # pFind-new、MSFragger为True
+  "pFind-new&MaxQuant" = 4786,  # pFind-new、MaxQuant为True
+  "pFind-new&Comet" = 1346,  # pFind-new、Comet为True
+  "MSFragger&MaxQuant" = 1633,  # MSFragger、MaxQuant为True
+  "MSFragger&Comet" = 691,  # MSFragger、Comet为True
+  "MaxQuant&Comet" = 550,  # MaxQuant、Comet为True
+  "pFind-new" = 29267,  # 仅pFind-new为True
+  "MSFragger" = 2986,  # 仅MSFragger为True
+  "MaxQuant" = 2470,  # 仅MaxQuant为True
+  "Comet" = 1614  # 仅Comet为True
 )
 
 # 创建颜色向量
@@ -67,6 +49,7 @@ bar_colors <- c(
 )
 
 # 绘制图形
+png("upset.png", width = 800, height = 600, res = 300)  # 分辨率自己调
 upset(fromExpression(expression_data),
       nsets = 4,
       nintersects = 15,
